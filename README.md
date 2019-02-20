@@ -1,3 +1,4 @@
+#2/20/2020 - error was terminated. main.cpp is changed
 # Trio
 
 This C++ program receives three integers and tells the user the numbers in descending (largest-to-smallest) order.
