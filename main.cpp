@@ -10,7 +10,7 @@ void swap(int &first, int &second)
   second = temp;
 }
 
-void sortDescending(int first, int second, int third)
+void sortDescending(int &first, int &second, int &third)
 {
   if( first < third )
   {
