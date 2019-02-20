@@ -3,20 +3,11 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-void sortDescending(int,int,int);
-void swap(int&,int&);
-
-int main()
+void swap(int &first, int &second)
 {
-  int numA, numB, numC;
-  cout<<"Enter any three numbers: ";
-  cin>>numA>>numB>>numC;
-
-  sortDescending(numA, numB, numC);
-  
-  cout<<"From greatest to least, they are: ";
-  cout<<numA<<","<<numB<<","<<numC<<endl;
-  return 0;
+  int temp = first;
+  first = second;
+  second = temp;
 }
 
 void sortDescending(int first, int second, int third)
@@ -35,9 +26,15 @@ void sortDescending(int first, int second, int third)
   }
 }
 
-void swap(int &first, int &second)
+int main()
 {
-  int temp = first;
-  first = second;
-  second = temp;
+  int numA, numB, numC;
+  cout<<"Enter any three numbers: ";
+  cin>>numA>>numB>>numC;
+
+  sortDescending(numA, numB, numC);
+  
+  cout<<"From greatest to least, they are: ";
+  cout<<numA<<","<<numB<<","<<numC<<endl;
+  return 0;
 }
